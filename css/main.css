@@ -6,9 +6,8 @@
 
 html {
   box-sizing: border-box;
-
   color: #222;
-  font: normal 100%/1.5 Georgia, serif;
+  font: normal 100%/1.5 'Slabo 27px', cursive, serif;
 }
 
 *, *::before, *::after {
@@ -31,21 +30,17 @@ img {
 
 header {
   padding: 1.5rem 0;
-
   background-color: #333;
-
   color: #f2f2f2;
 }
 
 h1 {
   margin: 0;
-
   font-size: 1.5rem;
 }
 
 .chapter-num {
   display: block;
-
   font-size: 1rem;
   font-style: italic;
 }
@@ -60,7 +55,6 @@ main {
 
 p {
   margin: 0;
-
   text-indent: 1.3em;
 }
 
@@ -68,17 +62,16 @@ p:first-child {
   text-indent: 0;
 }
 
-main > p:first-child::first-line {
+main>p:first-child::first-line {
   font-style: italic;
 }
 
 footer {
   padding: 1.5rem 0;
-
   background-color: #333;
-
   color: #f2f2f2;
 }
+
 
 /*
  ##########################################################
@@ -86,4 +79,57 @@ footer {
  ##########################################################
 */
 
+p {
+  font-family: serif;
+}
+
+
 /* Write your CSS here */
+
+p.first::first-letter {
+  box-sizing: border-box;
+  font-size: 5rem;
+  font-style: normal;
+  background-color: #666;
+  float: left;
+  color: #f2f2f2;
+  font-weight: 500;
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #333;
+  padding: 0.1em 0.2em;
+  margin-top: 0.4rem;
+  margin-left: -2rem;
+  margin-right: 1rem;
+}
+
+figure, blockquote {
+  width: 300px;
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #333;
+  padding: 0.5em 0;
+}
+
+figure {
+  float: right;
+  margin: 0;
+  margin-left: 1rem;
+  margin-right: -10rem;
+}
+
+figcaption {
+  text-align: left;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+blockquote {
+  font-size: 1.5rem;
+  margin: 0;
+  float: left;
+  font-family: 'Slabo 27px', sans-serif;
+  margin-left: -10rem;
+  margin-right: 1rem;
+  text-align: right;
+  color: #666;
+  font-weight: bold;
+}
